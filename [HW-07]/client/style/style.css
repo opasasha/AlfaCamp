@@ -1,0 +1,22 @@
+/* app div */
+.autocomplete{
+    position: relative;
+}
+/* ul */
+.autocomplete-items{
+    border: 1px solid gray;
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    width: 175px;
+    overflow: auto;
+}
+/* li */
+.autocomplete-item{
+    list-style: none;
+    text-align: left;
+    padding: 4px 2px;
+}
+.autocomplete-item:hover{
+    background-color: rgb(179, 165, 165);
+}

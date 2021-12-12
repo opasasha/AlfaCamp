@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Області україни</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="autoform" class="autocomplete">
+        <h3>Автозаповнення для областей України</h3>
+        <input 
+            type="text" 
+            v-model="name" 
+            @input="onChange"/>
+
+        <ul class="autocomplete-items"
+            v-show="isOpen">
+
+            <li 
+                v-for="city in filteredList"
+                v-on:click="onClick(city.name)"
+                class="autocomplete-item">
+                {{ city.name }}
+            </li>
+        </ul>
+    </div>
+<script src="./script/script.js"></script>
+</body>
+</html>
