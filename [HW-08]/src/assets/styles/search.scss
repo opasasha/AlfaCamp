@@ -1,0 +1,104 @@
+body{
+    
+    background: #FFFFFF;
+}
+.container{
+    font-family: "Open Sans";
+    width:710px;
+    margin: auto;
+    height: 100wh;
+}
+.search{
+    margin-top:200px;
+    .search-headers{
+        .search-headers-greetings{
+            font-Weight: 700;
+            font-size: 36px;
+            line-height: 49px;
+            color: #222222;
+
+        }
+        .search-headers-tip{
+            margin-top: 20px;
+            font-Weight: 400;
+            line-height: 30px;
+            font-size: 22px;
+            text-align: center;
+            color: #222222;
+        }
+    }
+    .search-input{
+        margin-top:100px;
+        .search-input-field{
+            width:710px;
+            height:65px;
+            border-radius: 8px 8px 0 0;
+            border:none;
+            background-color:#F1F1F1;
+            text-indent: 30px;
+            font-size: 18px;
+            line-height: 25px;
+            
+        }
+        .search-input-field::-webkit-input-placeholder{
+            text-indent: 30px;
+            font-size: 18px;
+            line-height: 25px;
+            
+        }
+        .search-input-field:focus{
+            outline:none;
+        }
+        .search-input-error{
+            text-align: center;
+            background-color: rgb(230, 172, 172);
+            font-size: 25px;
+            height: 100px;
+            margin-top: -15px;
+            padding-top:20px;
+            
+        }
+        .search-input-autocomplete{
+            border: 1px solid gray;
+            padding:0px;
+            min-height: 50px;
+            margin-top: -20px;
+            max-height: 99px;
+            width: 711px;
+            overflow: auto;
+            text-indent: 30px;
+
+            .search-input-autocomplete-items{
+                list-style: none;
+                text-align: left;
+                padding: 4px 2px;
+                font-size: 18px;
+                line-height: 25px;  
+            }
+            .search-input-autocomplete-items:hover{
+                background: #cfc9c9;
+            }
+        }
+
+
+        .search-input-bottom-line{
+            position:relative;
+            height:1px;
+            width:714px;
+            top: -8px;
+            border:none;
+            background-color:#7D7D7D;
+        }
+    }
+    .search-button{
+        margin-top: 100px;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 18px;
+        background-color: #000AFF;
+        width: 264px;
+        height: 60px;
+        border-radius: 4px;
+        border:none;
+    }
+}
